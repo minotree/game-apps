@@ -47,12 +47,15 @@ PowerShell 실행 정책으로 `pnpm.ps1`이 막히므로 Windows에서는 `pnpm
 
 ## 문서
 
-- 요구사항: `docs/planning/`의 Google Docs 바로가기
+- 요구사항: `docs/planning/README.md`의 로컬 Markdown 스냅샷과 Google Docs 원본 바로가기
 - 구조·결정: `docs/architecture/`, `docs/decisions/` (필요 시 생성)
 - 진행 기록: `progress.md`
 
 ## 기획 기준과 미결정 사항
 
 - 기획은 96개월(8년), 3개 세계선, 세계선별 3개 직업 계열과 4단계 전직, 27개 기본 융합 엔딩, 7개 히든 엔딩을 정의한다. 구현 우선순위는 월간 4주 스케줄 → 5대 고유 스탯 → 전직 → 탐험/전투 → 엔딩/환생이다.
+- 화면과 기능은 `docs/architecture/screen-flow.md`의 사용자 흐름을 따른다. 새 게임은 타이틀 → 2154년 프롤로그 → 최초 직업 선택 → 메인 스케줄 순서이며, 환생 포인트 배분은 환생 회차에서만 표시한다.
+- 육성 감각과 SF 위기 연출의 참조 범위는 `docs/architecture/design-direction.md`를 따른다. 참조 작품의 보호되는 캐릭터·고유 요소·자산을 복제하지 않는다.
+- 기획을 구현하거나 검토할 때는 먼저 `docs/planning/*.md`를 읽고, 상세 서사·편집 이력·로컬 스냅샷에 없는 내용은 연결된 Google Docs 원본에서 확인한다. 원본이 바뀌면 관련 Markdown 스냅샷의 동기화 기준일과 내용을 갱신한다.
 - 기획 문서 사이에는 일부 엔딩명과 세부 조건 표현의 차이가 있다. 구현 전에 `docs/decisions/`에서 기준 문서와 정규 명칭·조건을 확정하며, 추측으로 통합하지 않는다.
 
