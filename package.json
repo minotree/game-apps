@@ -1,0 +1,21 @@
+{
+  "name": "game-apps",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.34.7",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "pnpm run dev:time-longinus",
+    "dev:time-longinus": "pnpm --filter @time-longinus/web dev",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm --filter @time-longinus/core test",
+    "build:time-longinus": "pnpm --filter @time-longinus/web build"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  }
+}
+

@@ -1,0 +1,4 @@
+packages:
+  - games/*/apps/*
+  - games/*/packages/*
+

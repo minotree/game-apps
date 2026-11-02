@@ -1,0 +1,15 @@
+:root { color: #dbe9ff; background: #090d17; font-family: ui-monospace, "Cascadia Code", monospace; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, select { font: inherit; }
+button { cursor: pointer; border: 1px solid #46618c; background: #131f34; color: inherit; padding: .7rem .85rem; }
+button:hover, button.selected { border-color: #67e8f9; background: #183250; }
+.terminal { width: min(100%, 980px); min-height: 100vh; margin: auto; padding: max(1rem, env(safe-area-inset-top)) 1rem 2rem; }
+header { border-left: 4px solid #67e8f9; padding-left: 1rem; margin: 1rem 0; }
+h1, h2, p { margin: 0; } h1 { font-size: clamp(1.7rem, 5vw, 2.8rem); } h2 { font-size: 1rem; color: #67e8f9; } .eyebrow, .muted { color: #91a4c7; font-size: .78rem; } header p:last-child { margin-top: .6rem; }
+.status, .worldlines, .weeks { display: grid; gap: .55rem; } .status { grid-template-columns: repeat(2, 1fr); margin: 1rem 0; } .status span, article, .schedule { border: 1px solid #273750; padding: .8rem; background: #0f1625; } .danger { color: #fb7185; }
+.worldlines { grid-template-columns: repeat(3, 1fr); margin-bottom: 1rem; } .worldlines button { min-height: 3.4rem; font-size: .74rem; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); } article { min-height: 12rem; } dl { display: grid; grid-template-columns: 1fr 1fr 1fr; } dt { color: #91a4c7; font-size: .75rem; } dd { margin: .35rem 0 0; font-size: 1.4rem; } pre { white-space: pre-wrap; line-height: 1.7; color: #d8f9ff; } .muted { margin-top: 1rem; line-height: 1.5; }
+.schedule { margin-top: 1rem; } .schedule > button { margin-top: .8rem; } .weeks { grid-template-columns: repeat(4, 1fr); margin: 1rem 0; } label { display: grid; gap: .4rem; color: #91a4c7; font-size: .75rem; } select { width: 100%; padding: .55rem; background: #101b2e; color: inherit; border: 1px solid #46618c; } .primary { width: 100%; background: #155e75; border-color: #67e8f9; font-weight: 700; }
+@media (max-width: 620px) { .worldlines, .weeks { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } .status { grid-template-columns: 1fr 1fr; } }
+
